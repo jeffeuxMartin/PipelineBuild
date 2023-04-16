@@ -1,11 +1,11 @@
 #!/storage/LabJob/Projects/conda_env/s3prl_env/bin/python
-from fairseq_utils import dump_hubert_feature
+# from fairseq_utils import dump_hubert_feature
 import torch, torchaudio
 import os
 from pathlib import Path
 import pandas as pd
 from torch.utils.data import Dataset, DataLoader
-dump_hubert_feature.main
+# dump_hubert_feature.main
 
 class MyResampler(torch.nn.Module):
     def __init__(self, expected_sample_rate=16000):
